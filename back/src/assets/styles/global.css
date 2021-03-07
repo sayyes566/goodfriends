@@ -1,0 +1,234 @@
+/* .header {
+    padding: 2%;
+    background-color: rgb(128, 0, 107);
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    color: white;
+ } */
+/* .navbar-brand{
+  font-size: 1.3rem;
+font-weight: 600;
+color: #2c3e50;
+position: relative;
+}
+ body {
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(34, 36, 41);
+  color: rgb(224, 228, 228);
+  padding-top: 0px;
+  font-feature-settings: "liga" 0;
+  line-height: 1.7;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  } */
+
+ /* .SideBar {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgb(92, 96, 105);
+  /* display: flex; */
+/*   
+  width: 270px;
+  height: 100vh;
+  top:0;
+  left:0;
+  flex-direction: column;
+
+  } */ 
+/* .sidebar .sidebar-sub-headers {
+    padding-left: 1rem;
+    font-size:.95em;
+   
+}
+a.sidebar-link {
+    font-size: 1em;
+    font-weight: 400;
+    display: inline-block;
+
+    color: rgb(224, 228, 228);
+    text-shadow: rgba(224, 228, 228, 0.4) 0px 2px 3px;
+    border-left: .25rem solid transparent;
+    padding: .35rem 1rem .35rem 1.25rem;
+    line-height: 1.4;
+    width: 100%;
+    box-sizing:border-box
+}
+
+a.sidebar-link:hover {
+    color:#3eaf7c
+}
+
+
+a.sidebar-link.active {
+    font-weight: 600;
+    color: #3eaf7c;
+    border-left-color:#3eaf7c
+}
+
+.sidebar-group a.sidebar-link {
+    padding-left:2rem
+}
+
+.sidebar .sidebar-sub-headers {
+  padding-left: 1rem;
+  font-size:.95em
+}
+
+.sidebar-sub-headers a.sidebar-link {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    border-left:none
+}
+
+.sidebar-sub-headers a.sidebar-link.active {
+    font-weight:500
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type:none
+}
+
+.sidebar a {
+    display:inline-block
+}
+
+.sidebar .nav-links {
+    display: none;
+    border-bottom: 1px solid #eaecef;
+    padding:.5rem 0 .75rem
+}
+
+.sidebar .nav-links a {
+    font-weight:600
+}
+
+.sidebar .nav-links .nav-item, .sidebar .nav-links .repo-link {
+    display: block;
+    line-height: 1.25rem;
+    font-size: 1.1em;
+    padding:.5rem 0 .5rem 1.5rem
+}
+
+.sidebar > .sidebar-links {
+    padding:1.5rem 0
+}
+
+.sidebar > .sidebar-links > li > a.sidebar-link {
+    font-size: 1.1em;
+    line-height: 1.7;
+    font-weight:700
+}
+
+.sidebar > .sidebar-links > li:not(:first-child) {
+    margin-top:.75rem
+} */
+.collapsed > .when-open,
+.not-collapsed > .when-closed {
+  display: none;
+}
+.sidebar {
+  position: fixed;
+  width: 200px; 
+  left: -200px;
+  transition: left .3s ease-in out;
+}
+.sidebar.is-visible {
+ left: 0;
+}
+
+ .footer {
+   padding: 2%;
+    background-color: red;
+    font-size: 50px;
+    text-align: center;
+    width: 100%
+ }
+ 
+ .dashboard {
+   padding: 3% 1%;
+ }
+
+h1 {
+  text-align: center;
+}
+
+.display-board {
+  width: 100%;
+  background-color: rgba(0, 119, 128, 0.719);
+  padding: 5%;
+}
+
+.number {
+  color: red;
+  font-size: 75px;
+  text-align: center;
+}
+
+.mrgnbtm {
+  margin-top: 20px;
+}
+
+
+/*sidebar*/
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+ #wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+min-height: 100vh;
+margin-left: -15rem;
+-webkit-transition: margin .25s ease-out;
+-moz-transition: margin .25s ease-out;
+-o-transition: margin .25s ease-out;
+transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+padding: 0.875rem 1.25rem;
+font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+width: 15rem;
+}
+
+#page-content-wrapper {
+min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+margin-left: 0;
+}
+
+@media (min-width: 768px) {
+#sidebar-wrapper {
+  margin-left: 0;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: -15rem;
+}
+}
+
