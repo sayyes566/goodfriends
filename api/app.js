@@ -1,10 +1,24 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 const port = 3009;
 const bodyParser = require("body-parser");
+const mongoose = require('mongoose');
+const config = require("config");
+const dbConfig = config.get("mongo");
+const connectMongo = 'mongodb://'+dbConfig.admin+':'+dbConfig.pass+'@mongodb:27017/'+dbConfig.db+"?authSource=admin";
+
+
+ mongoose.connect(connectMongo, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("Connected to MongoDB server"))
+  .catch((error) => console.log(error));
+
 
 //place holder for the data
 //const users = [];

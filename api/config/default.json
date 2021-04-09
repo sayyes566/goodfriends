@@ -1,0 +1,8 @@
+{ 
+ "mongo" : {
+  "admin": "kristen",
+  "pass" : "4321Kristen",
+  "db"   : "health"  
+ }
+}
+ 

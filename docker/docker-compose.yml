@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+
+  node:
+    container_name: nodeapp
+    image: nodeapp
+    build:
+      context: .
+      dockerfile: node.dockerfile
+    ports:
+      - "3009:3009"
+    volumes: 
+      - /Users/chingan/app/node/lala/web20210223/recoverFriends:/var/www
+    depends_on: 
+      - mongodb
+      
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - "27017:27020"
+
